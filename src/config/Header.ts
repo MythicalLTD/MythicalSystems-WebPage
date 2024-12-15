@@ -1,5 +1,6 @@
-export const navItems = [
-    { name: 'Home', link: '/' },
+import { ref } from "vue";
+
+export const navItems = ref([
     {
         name: 'Products',
         link: '#',
@@ -19,6 +20,7 @@ export const navItems = [
             { name: 'Gamster.org', link: 'https://gamster.org' },
             { name: 'MythicalPics', link: 'https://i.mythical.systems' },
         ],
+        open: false
     },
     {
         name: 'Links',
@@ -32,6 +34,7 @@ export const navItems = [
             { name: 'MythicalPics', link: 'https://i.mythical.systems' },
             { name: 'Order', link: 'https://billing.mythical.systems/cart.php' },
         ],
+        open: false
     },
     {
         name: 'MythicalHosting',
@@ -44,6 +47,7 @@ export const navItems = [
             { name: 'Game Hosting', link: '/mythicalhost/game' },
             { name: 'Dedicated Servers', link: '/mythicalhost/dedicated' },
         ],
+        open: false
     },
     {
         name: 'Contact',
@@ -53,6 +57,7 @@ export const navItems = [
             { name: 'Discord', link: 'https://discord.mythical.systems' },
             { name: 'Email', link: 'mailto:hello@mythicalsystems.xyz' },
         ],
+        open: false
     },
     {
         name: 'Legal',
@@ -61,5 +66,6 @@ export const navItems = [
             { name: 'Terms', link: '/terms' },
             { name: 'Privacy', link: '/privacy' },
         ],
+        open: false
     },
-];
+]);

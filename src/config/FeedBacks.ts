@@ -1,20 +1,20 @@
 export const testimonials = [
     {
-        name: 'John Doe',
-        position: 'CEO, TechCorp',
-        avatar: '/img/avatar1.jpg',
-        quote: 'MythicalSystems has transformed our development process. Their innovative solutions have significantly improved our productivity.',
+        name: 'Rodio',
+        position: 'User, Member',
+        avatar: '/img/logos/mythical/mythical.png',
+        quote: 'Pretty good, easy to make themes and edit it\'s interface. I\'ve been using their projects for half a month now, seems pretty good ❤️',
     },
     {
-        name: 'Jane Smith',
-        position: 'CTO, InnovateTech',
-        avatar: '/img/avatar2.jpg',
-        quote: "The level of expertise and support we've received from MythicalSystems is unparalleled. They're truly a game-changer in the industry.",
+        name: 'Usslmulk',
+        position: 'User, Member',
+        avatar: '/img/logos/mythical/mythical.png',
+        quote: "I love it is better then the most client areas out there. Never had a problem with them and support is really fast and helpful.",
     },
     {
-        name: 'Mike Johnson',
-        position: 'Lead Developer, StartupX',
-        avatar: '/img/avatar3.jpg',
-        quote: 'Working with MythicalSystems has been a breeze. Their tools and services have made our development cycles faster and more efficient.',
+        name: 'Pringles',
+        position: 'User, Member',
+        avatar: '/img/logos/mythical/mythical.png',
+        quote: 'Easy to Install and understandable Docs, nice look and feel. I love it ❤️',
     },
 ];

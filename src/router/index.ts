@@ -6,6 +6,21 @@ const routes = [
         name: 'Home',
         component: () => import('@/pages/Index.vue'),
     },
+    {
+        path: '/terms',
+        name: 'Terms & Conditions',
+        component: () => import('@/pages/legal/Terms.vue'),
+    },
+    {
+        path: '/privacy',
+        name: 'Privacy Policy',
+        component: () => import('@/pages/legal/Privacy.vue'),
+    },
+    {
+        path: '/eula',
+        name: 'End User License Agreement',
+        component: () => import('@/pages/legal/Eula.vue'),
+    }
 ];
 
 routes.push({

@@ -13,15 +13,10 @@
                 </div>
                 <div class="hidden md:block">
                     <div class="flex items-center space-x-4">
-                        <div v-for="item in navItems" :key="item.name" class="relative group">
-                            <component
-                                :is="item.link.startsWith('http') ? 'a' : 'router-link'"
-                                :href="item.link.startsWith('http') ? item.link : undefined"
-                                :to="!item.link.startsWith('http') ? item.link : undefined"
-                                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
-                            >
+                        <div v-for="item in navItems" :key="item.name" class="relative" @mouseenter="item.open = true" @mouseleave="item.open = false">
+                            <button class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">
                                 {{ item.name }}
-                            </component>
+                            </button>
                             <transition
                                 enter-active-class="transition ease-out duration-200"
                                 enter-from-class="opacity-0 translate-y-1"
@@ -31,8 +26,8 @@
                                 leave-to-class="opacity-0 translate-y-1"
                             >
                                 <Card
-                                    v-if="item.submenu"
-                                    class="absolute left-0 mt-2 w-48 py-2 hidden group-hover:block"
+                                    v-if="item.submenu && item.open"
+                                    class="absolute left-0 mt-2 w-48 py-2"
                                 >
                                     <component
                                         v-for="subItem in item.submenu"
