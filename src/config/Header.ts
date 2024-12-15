@@ -65,6 +65,7 @@ export const navItems = ref([
         submenu: [
             { name: 'Terms', link: '/terms' },
             { name: 'Privacy', link: '/privacy' },
+            { name: 'EULA', link: '/eula' }
         ],
         open: false
     },
