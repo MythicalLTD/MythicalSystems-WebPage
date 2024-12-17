@@ -14,6 +14,10 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  server: {
+    port: 9721,
+    open: true,
+  },
   build: {
     rollupOptions: {
       output: {

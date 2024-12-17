@@ -1,4 +1,4 @@
-import { ref } from "vue";
+import { ref } from 'vue';
 
 export const navItems = ref([
     {
@@ -20,7 +20,7 @@ export const navItems = ref([
             { name: 'Gamster.org', link: 'https://gamster.org' },
             { name: 'MythicalPics', link: 'https://i.mythical.systems' },
         ],
-        open: false
+        open: false,
     },
     {
         name: 'Links',
@@ -34,7 +34,7 @@ export const navItems = ref([
             { name: 'MythicalPics', link: 'https://i.mythical.systems' },
             { name: 'Order', link: 'https://billing.mythical.systems/cart.php' },
         ],
-        open: false
+        open: false,
     },
     {
         name: 'MythicalHosting',
@@ -47,7 +47,7 @@ export const navItems = ref([
             { name: 'Game Hosting', link: '/mythicalhost/game' },
             { name: 'Dedicated Servers', link: '/mythicalhost/dedicated' },
         ],
-        open: false
+        open: false,
     },
     {
         name: 'Contact',
@@ -57,7 +57,7 @@ export const navItems = ref([
             { name: 'Discord', link: 'https://discord.mythical.systems' },
             { name: 'Email', link: 'mailto:hello@mythicalsystems.xyz' },
         ],
-        open: false
+        open: false,
     },
     {
         name: 'Legal',
@@ -65,8 +65,8 @@ export const navItems = ref([
         submenu: [
             { name: 'Terms', link: '/terms' },
             { name: 'Privacy', link: '/privacy' },
-            { name: 'EULA', link: '/eula' }
+            { name: 'EULA', link: '/eula' },
         ],
-        open: false
+        open: false,
     },
 ]);

@@ -1,4 +1,3 @@
-
 import { MdTextParser } from '../utils/MdTextParser';
 
 export const privacy = MdTextParser.mdToHtml(`## Information We Collect

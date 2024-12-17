@@ -13,8 +13,16 @@
                 </div>
                 <div class="hidden md:block">
                     <div class="flex items-center space-x-4">
-                        <div v-for="item in navItems" :key="item.name" class="relative" @mouseenter="item.open = true" @mouseleave="item.open = false">
-                            <button class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">
+                        <div
+                            v-for="item in navItems"
+                            :key="item.name"
+                            class="relative"
+                            @mouseenter="item.open = true"
+                            @mouseleave="item.open = false"
+                        >
+                            <button
+                                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
+                            >
                                 {{ item.name }}
                             </button>
                             <transition
@@ -25,10 +33,7 @@
                                 leave-from-class="opacity-100 translate-y-0"
                                 leave-to-class="opacity-0 translate-y-1"
                             >
-                                <Card
-                                    v-if="item.submenu && item.open"
-                                    class="absolute left-0 mt-2 w-48 py-2"
-                                >
+                                <Card v-if="item.submenu && item.open" class="absolute left-0 mt-2 w-48 py-2">
                                     <component
                                         v-for="subItem in item.submenu"
                                         :key="subItem.name"

@@ -27,7 +27,10 @@ export class MdTextParser {
             .replace(/\n/g, '<br>')
             .replace(/\*\*(.*?)\*\*/g, '<strong class="text-2xl font-semibold text-purple-300">$1</strong>')
             .replace(/\*(.*?)\*/g, '<em class="text-2xl font-semibold text-purple-300">$1</em>')
-            .replace(/```([\s\S]*?)```/g, '<pre class="bg-gray-800 text-purple-600 p-4 rounded"><code class="language-ts">$1</code></pre>')
+            .replace(
+                /```([\s\S]*?)```/g,
+                '<pre class="bg-gray-800 text-purple-600 p-4 rounded"><code class="language-ts">$1</code></pre>',
+            )
             .replace(/`([^`]+)`/g, '<code class="bg-gray-800 text-purple-600 p-1 rounded">$1</code>');
     }
 }

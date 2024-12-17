@@ -1,4 +1,3 @@
-
 import { MdTextParser } from '../utils/MdTextParser';
 
 export const terms = MdTextParser.mdToHtml(`## Introduction

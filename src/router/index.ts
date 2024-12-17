@@ -20,7 +20,17 @@ const routes = [
         path: '/eula',
         name: 'End User License Agreement',
         component: () => import('@/pages/legal/Eula.vue'),
-    }
+    },
+    {
+        path: '/branding',
+        name: 'Branding Guidelines',
+        component: () => import('@/pages/Branding.vue'),
+    },
+    {
+        path: '/S',
+        name: 'MythicalHosting',
+        component: () => import('@/pages/MythicalHosting.vue'),
+    },
 ];
 
 routes.push({
