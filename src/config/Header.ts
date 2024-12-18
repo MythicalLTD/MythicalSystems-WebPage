@@ -26,6 +26,7 @@ export const navItems = ref([
         name: 'Links',
         link: '#',
         submenu: [
+            { name: 'Docs', link: '/docs'},
             { name: 'Status Page', link: 'https://status.mythical.systems' },
             { name: 'Pterodactyl Panel', link: 'https://panel.mythical.systems' },
             { name: 'Billing Area', link: 'https://billing.mythical.systems' },

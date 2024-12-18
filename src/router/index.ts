@@ -27,17 +27,25 @@ const routes = [
         component: () => import('@/pages/Branding.vue'),
     },
     {
-        path: '/S',
+        path: '/mythicalhosting',
         name: 'MythicalHosting',
         component: () => import('@/pages/MythicalHosting.vue'),
     },
+    {
+        path: '/:pathMatch(.*)*',
+        name: 'NotFound',
+        component: () => import('@/pages/errors/NotFound.vue'),
+    },
 ];
 
-routes.push({
-    path: '/:pathMatch(.*)*',
-    name: 'NotFound',
-    component: () => import('@/pages/errors/NotFound.vue'),
-});
+import { MythicalDashDocs } from '@/pages/docs/Routes';
+
+routes.push(
+    ...MythicalDashDocs.map((route) => ({
+        ...route,
+        component: () => route.component().then((module) => module.default || module),
+    })),
+);
 
 const router = createRouter({
     history: createWebHistory(),

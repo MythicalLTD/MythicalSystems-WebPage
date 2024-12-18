@@ -2,23 +2,33 @@
     <div class="min-h-screen bg-[#0a0a0f] text-white overflow-hidden">
         <AnimatedBackground />
         <div id="glowing-cursor"></div>
-        <Navbar />
-        <main>
-            <RouterView />
-        </main>
-        <Footer />
+        <component :is="layout">
+            <router-view></router-view>
+        </component>
         <CustomContextMenu />
         <BackToTop />
     </div>
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue';
-import Navbar from '@/components/ui/Navbar.vue';
-import Footer from '@/components/ui/Footer.vue';
+import { computed, onMounted } from 'vue';
+
 import AnimatedBackground from '@/components/ui/AnimatedBackground.vue';
 import CustomContextMenu from '@/components/ui/CustomContextMenu.vue';
 import BackToTop from '@/components/ui/BackToTop.vue';
+
+import BaseLayout from '@/layouts/BaseLayout.vue';
+import DocsLayout from '@/layouts/DocsLayout.vue';
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
+
+const layout = computed(() => {
+    if (route.path.startsWith('/docs')) {
+        return DocsLayout;
+    }
+    return BaseLayout;
+});
 
 onMounted(() => {
     document.documentElement.classList.add('dark');

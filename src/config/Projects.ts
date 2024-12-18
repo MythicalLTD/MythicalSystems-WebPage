@@ -46,7 +46,7 @@ export const products = [
             'Daily Backups',
             '10Gb/s Network',
         ],
-        images: ['/img/mythicalclient.png'],
+        images: ['/img/mythicalhosting.png'],
         purchaseLink: '/mythicalhosting',
         purchasePrice: 'FROM 1.00',
     },

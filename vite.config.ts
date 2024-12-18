@@ -34,6 +34,6 @@ export default defineConfig({
         }
       },
     },
-    chunkSizeWarningLimit: 1000, // Suppress warnings for larger chunks
+    chunkSizeWarningLimit: 10000, // Suppress warnings for larger chunks
   },
 })
