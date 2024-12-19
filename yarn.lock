@@ -711,6 +711,13 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/merge-streams/-/merge-streams-4.0.0.tgz#abb11d99aeb6d27f1b563c38147a72d50058e339"
   integrity sha512-tlqY9xq5ukxTUZBmoOp+m61cqwQD5pHJtFY3Mn8CA8ps6yghLH/Hw8UPdqg4OLmFW3IFlcXnQNmo/dh8HzXYIQ==
 
+"@tawk.to/tawk-messenger-vue-3@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@tawk.to/tawk-messenger-vue-3/-/tawk-messenger-vue-3-1.0.3.tgz#09e8051c2165ccd4cbe34718cff0a0c102174738"
+  integrity sha512-KqgJnRvT0XhFOBx1Udevq6GvkrQps2us5ZiilVKuyW1GsaBGi6C8nZEIc13xj/MTnZJjZrfRhNHpiw0i+5Hqhw==
+  dependencies:
+    vue "^3.2.31"
+
 "@tsconfig/node10@^1.0.7":
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/@tsconfig/node10/-/node10-1.0.11.tgz#6ee46400685f130e278128c7b38b7e031ff5b2f2"
@@ -2975,7 +2982,7 @@ vue-tsc@^2.1.10:
     "@vue/language-core" "2.1.10"
     semver "^7.5.4"
 
-vue@^3.5.12:
+vue@^3.2.31, vue@^3.5.12:
   version "3.5.13"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.5.13.tgz#9f760a1a982b09c0c04a867903fc339c9f29ec0a"
   integrity sha512-wmeiSMxkZCSc+PM2w2VRsOYAZC8GdipNFRTsLSfodVqI9mbejKeXEGr8SckuLnrQPGe3oJN5c3K0vpoU9q/wCQ==

@@ -20,3 +20,5 @@ declare module 'vue-markdown' {
     export function parse(markdown: string): string;
 
 }
+
+declare module '@tawk.to/tawk-messenger-vue-3';

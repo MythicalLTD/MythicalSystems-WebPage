@@ -10,7 +10,7 @@
         <button
             v-show="isVisible"
             @click="scrollToTop"
-            class="fixed bottom-8 right-8 z-50 p-2 rounded-full bg-purple-600 text-white shadow-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 transform transition-all duration-300 hover:scale-110"
+            class="fixed bottom-24 right-8 z-50 p-2 rounded-full bg-purple-600 text-white shadow-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 transform transition-all duration-300 hover:scale-110"
             :class="{ 'animate-bounce': isHovering }"
             @mouseenter="isHovering = true"
             @mouseleave="isHovering = false"

@@ -67,6 +67,7 @@ export const navItems = ref([
             { name: 'Terms', link: '/terms' },
             { name: 'Privacy', link: '/privacy' },
             { name: 'EULA', link: '/eula' },
+            { name: 'Branding', link: '/branding' },
         ],
         open: false,
     },
