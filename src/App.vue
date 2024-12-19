@@ -32,7 +32,7 @@ const layout = computed(() => {
 
 onMounted(() => {
     document.documentElement.classList.add('dark');
-
+    window.scrollTo(0, 0);
     const cursor = document.getElementById('glowing-cursor');
     if (cursor) {
         document.addEventListener('mousemove', (e) => {

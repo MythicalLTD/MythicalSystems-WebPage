@@ -64,6 +64,14 @@ const faqs = ref([
         answer: "Yes, we offer a 7-day money-back guarantee for all our hosting plans. If you're not satisfied with our service, you can request a full refund within the first week.",
         isOpen: false,
     },
+    {
+        question: 'Can I host multiple websites on one server?',
+        answer: 'Yes, you can host multiple websites on a single server by setting up virtual hosts. Our control panel makes it easy to manage multiple domains and websites from one account.',
+    },
+    {
+        question: "Can I install custom software on my server?",
+        answer: "Yes, you have full root access to your server, so you can install any software or applications you need. Our support team is available to help you with any installation or configuration tasks.",
+    }
 ]);
 
 const toggleFaq = (index: number) => {

@@ -110,9 +110,9 @@ const locations = [
         uptime: '99.99%',
     },
     {
-        city: 'Amsterdam, Netherlands',
-        latency: '<30ms',
-        uptime: '99.99%',
+        city: 'India, Mumbai [SOON]',
+        latency: '<00ms',
+        uptime: '0%',
     },
 ];
 

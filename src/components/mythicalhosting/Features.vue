@@ -39,7 +39,7 @@ const features = [
     {
         icon: ShieldIcon,
         title: 'Advanced Security',
-        description: 'Enterprise-grade firewall and DDoS protection up to 14 TBPS filtering capacity.',
+        description: 'Enterprise-grade drive encryption using Lucks and proxmox backup server encryption!.',
     },
     {
         icon: ClockIcon,
@@ -48,8 +48,8 @@ const features = [
     },
     {
         icon: ZapIcon,
-        title: 'Low Latency Network',
-        description: 'Multiple 100 Gbps connections for minimal latency and maximum speed.',
+        title: 'Daily Backups',
+        description: 'We take backups of all our services daily incase of a hardware failure or datacenter failure.',
     },
     {
         icon: HeadphonesIcon,
@@ -61,5 +61,6 @@ const features = [
         title: 'Instant Activation',
         description: 'Get your server up and running in minutes with our automated provisioning.',
     },
+
 ];
 </script>
