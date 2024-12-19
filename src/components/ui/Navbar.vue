@@ -21,9 +21,12 @@
                             @mouseleave="item.open = false"
                         >
                             <button
-                                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
+                                class="text-gray-300 hover:text-white px-3 py-2 rounded-full text-sm font-medium transition-colors duration-300"
                             >
                                 {{ item.name }}
+                                <svg v-if="item.submenu" class="w-4 h-4 inline ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
                             </button>
                             <transition
                                 enter-active-class="transition ease-out duration-200"
@@ -40,7 +43,7 @@
                                         :is="(subItem.link ?? '').startsWith('http') ? 'a' : 'router-link'"
                                         :href="(subItem.link ?? '').startsWith('http') ? subItem.link : undefined"
                                         :to="!(subItem.link ?? '').startsWith('http') ? subItem.link : undefined"
-                                        class="block px-4 py-2 text-sm text-gray-300 hover:bg-purple-600 hover:text-white transition-colors duration-200"
+                                        class="block px-4 py-2 text-sm text-gray-300 hover:bg-purple-600 hover:text-white transition-colors duration-200 rounded-full"
                                     >
                                         {{ subItem.name }}
                                     </component>
@@ -68,26 +71,33 @@
             <div v-if="mobileMenuOpen" class="md:hidden backdrop-blur-lg">
                 <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                     <div v-for="item in navItems" :key="item.name">
-                        <component
-                            :is="item.link.startsWith('http') ? 'a' : 'router-link'"
-                            :href="item.link.startsWith('http') ? item.link : undefined"
-                            :to="!item.link.startsWith('http') ? item.link : undefined"
-                            class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
-                        >
+                        <button @click="item.open = !item.open" class="text-gray-300 hover:text-white block px-3 py-2 rounded-full text-base font-medium transition-colors duration-300 w-full text-left">
                             {{ item.name }}
-                        </component>
-                        <div v-if="item.submenu" class="pl-4">
-                            <component
-                                v-for="subItem in item.submenu"
-                                :key="subItem.name"
-                                :is="(subItem.link ?? '').startsWith('http') ? 'a' : 'router-link'"
-                                :href="(subItem.link ?? '').startsWith('http') ? subItem.link : undefined"
-                                :to="!(subItem.link ?? '').startsWith('http') ? subItem.link : undefined"
-                                class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
-                            >
-                                {{ subItem.name }}
-                            </component>
-                        </div>
+                            <svg v-if="item.submenu" class="w-4 h-4 inline ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <transition
+                            enter-active-class="transition ease-out duration-200"
+                            enter-from-class="opacity-0 -translate-y-1"
+                            enter-to-class="opacity-100 translate-y-0"
+                            leave-active-class="transition ease-in duration-150"
+                            leave-from-class="opacity-100 translate-y-0"
+                            leave-to-class="opacity-0 -translate-y-1"
+                        >
+                            <div v-if="item.submenu && item.open" class="pl-4">
+                                <component
+                                    v-for="subItem in item.submenu"
+                                    :key="subItem.name"
+                                    :is="(subItem.link ?? '').startsWith('http') ? 'a' : 'router-link'"
+                                    :href="(subItem.link ?? '').startsWith('http') ? subItem.link : undefined"
+                                    :to="!(subItem.link ?? '').startsWith('http') ? subItem.link : undefined"
+                                    class="text-gray-300 hover:text-white block px-3 py-2 text-sm font-medium transition-colors duration-300 rounded-full"
+                                >
+                                    {{ subItem.name }}
+                                </component>
+                            </div>
+                        </transition>
                     </div>
                 </div>
             </div>

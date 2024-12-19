@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import { Box, Cpu, Shield } from 'lucide-vue-next'
+import { Box } from 'lucide-vue-next'
 
 const documentationTypes = [
     {
@@ -31,18 +31,6 @@ const documentationTypes = [
         description: 'Learn how to use and configure MythicalDash for your projects.',
         path: '/docs/mythicaldash/intro',
         icon: Box
-    },
-    {
-        title: 'MythicalAPI',
-        description: 'Explore our API documentation and integrate MythicalSystems into your applications.',
-        path: '/docs/mythicalapi/intro',
-        icon: Cpu
-    },
-    {
-        title: 'Security Guidelines',
-        description: 'Understand our security best practices and how to keep your projects safe.',
-        path: '/docs/security/intro',
-        icon: Shield
     }
 ]
 </script>

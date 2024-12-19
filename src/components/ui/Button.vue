@@ -1,6 +1,6 @@
 <template>
     <component
-        :is="href ? 'a' : 'button'"
+        :is="linkComponent"
         :class="[
             'px-6 py-3 rounded-lg font-semibold transition-all duration-300',
             'focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50',
@@ -10,14 +10,18 @@
             'hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30',
             className,
         ]"
-        :href="href"
+        :href="isExternal ? href : null"
+        :to="!isExternal ? href : null"
     >
         <slot></slot>
     </component>
 </template>
 
 <script setup lang="ts">
-defineProps({
+import { computed } from 'vue';
+import { useRoute } from 'vue-router';
+
+const props = defineProps({
     variant: {
         type: String,
         default: 'primary',
@@ -31,5 +35,19 @@ defineProps({
         type: String,
         default: '',
     },
+});
+
+const route = useRoute();
+
+const isExternal = computed(() => {
+    return props.href.startsWith('http') || props.href.startsWith('https');
+});
+
+const linkComponent = computed(() => {
+    if (props.href === '/' || isExternal.value) {
+        return 'a';
+    } else {
+        return 'router-link';
+    }
 });
 </script>

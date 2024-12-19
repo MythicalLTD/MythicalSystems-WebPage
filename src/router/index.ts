@@ -30,12 +30,7 @@ const routes = [
         path: '/mythicalhosting',
         name: 'MythicalHosting',
         component: () => import('@/pages/MythicalHosting.vue'),
-    },
-    {
-        path: '/:pathMatch(.*)*',
-        name: 'NotFound',
-        component: () => import('@/pages/errors/NotFound.vue'),
-    },
+    }
 ];
 
 import { MythicalDashDocs } from '@/pages/docs/Routes';
@@ -46,6 +41,14 @@ routes.push(
         component: () => route.component().then((module) => module.default || module),
     })),
 );
+
+routes.push(
+    {
+        path: '/:pathMatch(.*)*',
+        name: 'NotFound',
+        component: () => import('@/pages/errors/NotFound.vue'),
+    }
+)
 
 const router = createRouter({
     history: createWebHistory(),
