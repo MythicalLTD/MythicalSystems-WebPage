@@ -20,6 +20,9 @@
                         <p class="mb-4">Once you've created the file above, simply run the commands below.</p>
                         <CodeBlock language="bash" :code="enableConfig" />
                     </Card>
+                    <br>
+                    <Button href="/docs/mythicaldash/congratulations">Next Step</Button>&nbsp;
+                    <Button href="/docs/mythicaldash/intro" variant="secondary">Previous Step</Button>
                 </div>
             </div>
         </div>
@@ -29,6 +32,7 @@
 <script setup lang="ts">
 import Card from '@/components/docs/Card.vue'
 import CodeBlock from '@/components/docs/CodeBlock.vue'
+import Button from '@/components/ui/Button.vue';
 
 const removeDefaultConfig = `rm /etc/nginx/sites-enabled/default`
 
