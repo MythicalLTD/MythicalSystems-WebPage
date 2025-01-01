@@ -4,6 +4,7 @@ export const sections = [
         items: [
             { title: 'Introduction', path: '/docs/mythicaldash/intro' },
             { title: 'Installation', path: '/docs/mythicaldash/installation' },
+            { title: 'Create SSL', path: '/docs/general/create-ssl' },
             { title: 'WebServer', path: '/docs/mythicaldash/webserver' },
             { title: 'Congratulations', path: '/docs/mythicaldash/congratulations' },
             { title: 'Update', path: '/docs/mythicaldash/update' },
