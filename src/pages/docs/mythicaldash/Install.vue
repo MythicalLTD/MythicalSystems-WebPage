@@ -117,9 +117,6 @@
                             check if your host supports crontab. If you are on a terminal, run:</p>
                         <CodeBlock language="bash" :code="crontabSetup" />
                     </Card>
-                    <br>
-                    <Button href="/docs/mythicaldash/webserver">Next Step</Button>&nbsp;
-                    <Button href="/docs/mythicaldash/intro" variant="secondary">Previous Step</Button>
                 </div>
             </div>
         </div>
@@ -129,7 +126,6 @@
 <script setup lang="ts">
 import Card from '@/components/docs/Card.vue'
 import CodeBlock from '@/components/docs/CodeBlock.vue'
-import Button from '@/components/ui/Button.vue'
 
 const operatingSystems = [
     { name: 'Ubuntu', version: '20.04', supported: true, notes: 'Documentation written assuming Ubuntu 20.04 as the base OS.' },
@@ -155,10 +151,10 @@ const composerInstall = `cd /var/www/mythicaldash
   composer install --no-dev --optimize-autoloader`
 
 const fixMariaDB = `sudo sed -i '/^#collation-server/a collation-server = utf8mb4_general_ci' /etc/mysql/mariadb.conf.d/50-server.cnf
-  sudo sed -i '/^character-set-server/s/^/#/g' /etc/mysql/mariadb.conf.d/50-server.cnf 
+  sudo sed -i '/^character-set-server/s/^/#/g' /etc/mysql/mariadb.conf.d/50-server.cnf
   sudo sed -i '/^#character-set-server/a character-set-server = utf8mb4' /etc/mysql/mariadb.conf.d/50-server.cnf
-  
-  sudo sed -i '/^character-set-collations/s/^/#/g' /etc/mysql/mariadb.conf.d/50-server.cnf 
+
+  sudo sed -i '/^character-set-collations/s/^/#/g' /etc/mysql/mariadb.conf.d/50-server.cnf
   sudo sed -i '/^#character-set-collations/a character-set-collations = utf8mb4' /etc/mysql/mariadb.conf.d/50-server.cnf`
 
 const databaseSetup = `mysql -u root -p
