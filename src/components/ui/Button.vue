@@ -37,8 +37,6 @@ const props = defineProps({
     },
 });
 
-const route = useRoute();
-
 const isExternal = computed(() => {
     return props.href.startsWith('http') || props.href.startsWith('https');
 });
