@@ -63,7 +63,7 @@
                         <h2 class="text-3xl font-semibold text-purple-300 mb-4">Contact</h2>
                         <p>
                             For any questions regarding the use of MythicalSystems branding, please contact our
-                            marketing team at hello@mythicalsystems.xyz.
+                            marketing team at hello@mythical.systems.
                         </p>
                     </section>
                 </div>

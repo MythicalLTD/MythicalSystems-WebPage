@@ -72,4 +72,4 @@ This EULA shall be governed by and construed in accordance with the laws of the 
 
 ## 11. Contact Information
 
-For any questions regarding this EULA or MythicalSystems' Services, please contact us at \`hello@mythicalsystems.xyz\`.`);
+For any questions regarding this EULA or MythicalSystems' Services, please contact us at \`hello@mythical.systems\`.`);

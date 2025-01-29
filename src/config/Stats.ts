@@ -1,8 +1,8 @@
 import { ref } from 'vue';
 
 export const stats = ref({
-    users: 1515221,
-    projects: 55,
+    users: 565764,
+    projects: 70,
     uptime: 99.82,
-    revenue: 2125000,
+    revenue: 125000,
 });

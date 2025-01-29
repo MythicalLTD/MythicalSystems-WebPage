@@ -30,7 +30,7 @@ export const navItems = ref([
             { name: 'Status Page', link: 'https://status.mythical.systems' },
             { name: 'Pterodactyl Panel', link: 'https://panel.mythical.systems' },
             { name: 'Billing Area', link: 'https://billing.mythical.systems' },
-            { name: 'Plesk Panel', link: 'https://webhost.mythicalsystems.xyz' },
+            { name: 'Plesk Panel', link: 'https://webhost.mythical.systems' },
             { name: 'PhpMyAdmin', link: 'https://pma.mythical.systems' },
             { name: 'MythicalPics', link: 'https://i.mythical.systems' },
             { name: 'Order', link: 'https://billing.mythical.systems' },
@@ -56,7 +56,7 @@ export const navItems = ref([
         submenu: [
             { name: 'Instagram', link: 'https://www.instagram.com/nayskutzu.official/' },
             { name: 'Discord', link: 'https://discord.mythical.systems' },
-            { name: 'Email', link: 'mailto:hello@mythicalsystems.xyz' },
+            { name: 'Email', link: 'mailto:hello@mythical.systems' },
         ],
         open: false,
     },
@@ -71,4 +71,12 @@ export const navItems = ref([
         ],
         open: false,
     },
+    {
+        name: "Donate",
+        submenu: [
+            { name: "Stripe", link: "https://donate.stripe.com/00gcO2epX5yj2ysfYY" },
+            { name: "PayPal", link: "https://paypal.me/nayskutzu" }
+        ],
+        open: false
+    }
 ]);

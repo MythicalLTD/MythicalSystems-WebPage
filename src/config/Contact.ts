@@ -19,7 +19,7 @@ export const contacts = [
         platform: 'Email',
         icon: Mail,
         description: 'Reach out to us directly for inquiries',
-        link: 'mailto:hello@mythicalsystems.com',
+        link: 'mailto:abuse@mythical.systems',
         buttonText: 'Send an Email',
     },
 ];
