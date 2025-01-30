@@ -1,5 +1,5 @@
 export const resources = {
-    cpu: { label: 'CPU Usage', capacity: '128 Cores' },
-    ram: { label: 'RAM Usage', capacity: '8TB' },
-    disk: { label: 'Disk Usage', capacity: '460TB' },
+    cpu: { label: 'CPU Usage', capacity: '28 Cores' },
+    ram: { label: 'RAM Usage', capacity: '128Gb DDR5' },
+    disk: { label: 'Disk Usage', capacity: '6Tb' },
 };
