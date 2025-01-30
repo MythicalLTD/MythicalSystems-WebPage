@@ -1,5 +1,10 @@
 <template>
-    <div class="min-h-screen bg-[#0a0a0f] text-white overflow-hidden">
+    <Preloader :loading="isLoading" @fade-complete="onPreloaderFadeComplete" />
+
+    <div
+        class="min-h-screen bg-[#0a0a0f] text-white overflow-hidden transition-opacity duration-500"
+        :class="{ 'opacity-0': isLoading, 'opacity-100': !isLoading }"
+    >
         <AnimatedBackground />
         <div id="glowing-cursor"></div>
         <component :is="layout">
@@ -11,11 +16,12 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted } from 'vue';
+import { computed, onMounted, ref } from 'vue';
 
 import AnimatedBackground from '@/components/ui/AnimatedBackground.vue';
 import CustomContextMenu from '@/components/ui/CustomContextMenu.vue';
 import BackToTop from '@/components/ui/BackToTop.vue';
+import Preloader from '@/components/Preloader.vue';
 
 import BaseLayout from '@/layouts/BaseLayout.vue';
 import DocsLayout from '@/layouts/DocsLayout.vue';
@@ -29,6 +35,18 @@ const layout = computed(() => {
     }
     return BaseLayout;
 });
+
+const isLoading = ref(true);
+const mainContentVisible = ref(false);
+
+const onPreloaderFadeComplete = () => {
+    mainContentVisible.value = true;
+};
+
+// Set loading to false when your content is ready
+setTimeout(() => {
+    isLoading.value = false;
+}, 2000);
 
 onMounted(() => {
     document.documentElement.classList.add('dark');

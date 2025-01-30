@@ -69,9 +69,9 @@ const faqs = ref([
         answer: 'Yes, you can host multiple websites on a single server by setting up virtual hosts. Our control panel makes it easy to manage multiple domains and websites from one account.',
     },
     {
-        question: "Can I install custom software on my server?",
-        answer: "Yes, you have full root access to your server, so you can install any software or applications you need. Our support team is available to help you with any installation or configuration tasks.",
-    }
+        question: 'Can I install custom software on my server?',
+        answer: 'Yes, you have full root access to your server, so you can install any software or applications you need. Our support team is available to help you with any installation or configuration tasks.',
+    },
 ]);
 
 const toggleFaq = (index: number) => {

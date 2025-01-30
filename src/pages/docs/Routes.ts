@@ -70,5 +70,30 @@ export const MythicalDashDocs: Array<{ path: string; name: string; component: ()
         name: 'Generic - Config SSH',
         path: '/docs/general/config-ssh',
         component: () => import('@/pages/docs/general/setup-ssh-key.vue'),
-    }
+    },
+    {
+        name: 'MythicalAdmin - Intro',
+        path: '/docs/mythicaladmin/intro',
+        component: () => import('@/pages/docs/mythicaladmin/Intro.vue'),
+    },
+    {
+        name: 'MythicalAdmin - Customize',
+        path: '/docs/mythicaladmin/customize',
+        component: () => import('@/pages/docs/mythicaladmin/Customize.vue'),
+    },
+    {
+        name: 'MCUtils - Intro',
+        path: '/docs/mcutils/intro',
+        component: () => import('@/pages/docs/mcutils/Intro.vue'),
+    },
+    {
+        name: 'MCUtils - Standalone',
+        path: '/docs/mcutils/standalone',
+        component: () => import('@/pages/docs/mcutils/Standalone.vue'),
+    },
+    {
+        name: 'MCUtils - Blueprint',
+        path: '/docs/mcutils/blueprint',
+        component: () => import('@/pages/docs/mcutils/Blueprint.vue'),
+    },
 ];

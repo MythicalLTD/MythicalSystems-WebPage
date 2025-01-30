@@ -10,5 +10,11 @@ export const sponsors = [
         logo: '/img/dsh_logo.png',
         url: 'https://deinserverhost.de/store/aff.php?aff=5361',
         description: 'Premium hosting services for all your needs.',
-    }
+    },
+    {
+        name: 'HT-Hosting',
+        logo: '/img/ht_logo.png',
+        url: 'https://ht-hosting.de/aff.php?aff=5361',
+        description: 'Premium hosting services for all your needs.',
+    },
 ];

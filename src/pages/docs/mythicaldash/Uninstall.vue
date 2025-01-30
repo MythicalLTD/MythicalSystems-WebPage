@@ -4,7 +4,7 @@
             <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
                 <div class="space-y-8">
                     <h1 class="text-4xl font-bold mb-6 text-purple-400">Uninstall MythicalDash</h1>
-                    
+
                     <Card title="Remove Database">
                         <p class="mb-4">First, remove the database and the MythicalDash user:</p>
                         <CodeBlock language="sql" :code="databaseCommands" />
@@ -36,20 +36,20 @@
 </template>
 
 <script setup lang="ts">
-import Card from '@/components/docs/Card.vue'
-import CodeBlock from '@/components/docs/CodeBlock.vue'
+import Card from '@/components/docs/Card.vue';
+import CodeBlock from '@/components/docs/CodeBlock.vue';
 
 const databaseCommands = `mysql -u root -p
 DROP DATABASE mythicaldash;
 DROP USER 'mythicaldash'@'127.0.0.1';
-exit`
+exit`;
 
-const directoryCommand = `rm -rf /var/www/mythicaldash`
+const directoryCommand = `rm -rf /var/www/mythicaldash`;
 
-const crontabCommand = `sudo crontab -e`
+const crontabCommand = `sudo crontab -e`;
 
 const nginxCommand = `rm /etc/nginx/sites-available/MythicalDash.conf 
-rm /etc/nginx/sites-enabled/MythicalDash.conf`
+rm /etc/nginx/sites-enabled/MythicalDash.conf`;
 
-const restartCommand = `systemctl restart nginx --now`
+const restartCommand = `systemctl restart nginx --now`;
 </script>

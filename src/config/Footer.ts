@@ -3,5 +3,5 @@ export const links = [
     { name: 'Documentation', href: '/docs' },
     { name: 'Discord', href: 'https://discord.mythical.systems' },
     { name: 'Status', href: 'https://status.mythical.systems' },
-    { name: "Donate", href: "https://donate.stripe.com/00gcO2epX5yj2ysfYY" }
+    { name: 'Donate', href: 'https://donate.stripe.com/00gcO2epX5yj2ysfYY' },
 ];

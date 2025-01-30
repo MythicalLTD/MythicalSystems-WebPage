@@ -9,16 +9,20 @@
                     </router-link>
                 </div>
                 <Card title="Update and Install Dependencies">
-                    <p class="mb-4">The commands below are an example of how you might install these dependencies.
-                        Please consult with your operating system's package manager to determine the correct packages to
-                        install.</p>
+                    <p class="mb-4">
+                        The commands below are an example of how you might install these dependencies. Please consult
+                        with your operating system's package manager to determine the correct packages to install.
+                    </p>
                     <CodeBlock language="bash" :code="debianInstallation" />
                 </Card>
-                <br>
+                <br />
                 <Card title="Next Steps">
-                    <p class="mb-4">Now that you have finished installing everything, you can proceed to the next steps
-                        in the <router-link to="/docs/mythicaldash/installation"
-                            class="text-purple-400 hover:underline">main installation guide</router-link>.</p>
+                    <p class="mb-4">
+                        Now that you have finished installing everything, you can proceed to the next steps in the
+                        <router-link to="/docs/mythicaldash/installation" class="text-purple-400 hover:underline"
+                            >main installation guide</router-link
+                        >.
+                    </p>
                 </Card>
             </div>
         </div>
@@ -26,8 +30,8 @@
 </template>
 
 <script setup lang="ts">
-import Card from '@/components/docs/Card.vue'
-import CodeBlock from '@/components/docs/CodeBlock.vue'
+import Card from '@/components/docs/Card.vue';
+import CodeBlock from '@/components/docs/CodeBlock.vue';
 
 const debianInstallation = `# Update the server
   apt update && apt upgrade -y
@@ -48,5 +52,5 @@ const debianInstallation = `# Update the server
   curl -sS https://downloads.mariadb.com/MariaDB/mariadb_repo_setup | sudo bash
   
   # Install the rest of dependencies
-  apt install -y mariadb-server nginx tar unzip git redis-server zip dos2unix`
+  apt install -y mariadb-server nginx tar unzip git redis-server zip dos2unix`;
 </script>

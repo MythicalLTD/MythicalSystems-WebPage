@@ -5,26 +5,26 @@
                 <div class="space-y-8">
                     <div class="mt-8">
                         <router-link to="/docs/mythicaldash/installation" class="text-purple-400 hover:underline">
-                            ← Back 
+                            ← Back
                         </router-link>
                     </div>
                     <h1 class="text-4xl font-bold mb-6 text-purple-400">Ubuntu Installation</h1>
 
                     <Card title="Update and Install Dependencies">
-                        <p class="mb-4">The commands below are an example of how you might install these dependencies.
-                            Please
+                        <p class="mb-4">
+                            The commands below are an example of how you might install these dependencies. Please
                             consult with your operating system's package manager to determine the correct packages to
-                            install.</p>
+                            install.
+                        </p>
                         <CodeBlock language="bash" :code="ubuntuInstallation" />
                     </Card>
-                    <br>
+                    <br />
                     <Card title="Next Steps">
-                        <p class="mb-4">Now that you have finished installing everything, you can proceed to the next
-                            steps
-                            in the
-                            <router-link to="/docs/mythicaldash/installation"
-                                class="text-purple-400 hover:underline">main
-                                installation guide</router-link>.
+                        <p class="mb-4">
+                            Now that you have finished installing everything, you can proceed to the next steps in the
+                            <router-link to="/docs/mythicaldash/installation" class="text-purple-400 hover:underline"
+                                >main installation guide</router-link
+                            >.
                         </p>
                     </Card>
                 </div>
@@ -34,8 +34,8 @@
 </template>
 
 <script setup lang="ts">
-import Card from '@/components/docs/Card.vue'
-import CodeBlock from '@/components/docs/CodeBlock.vue'
+import Card from '@/components/docs/Card.vue';
+import CodeBlock from '@/components/docs/CodeBlock.vue';
 
 const ubuntuInstallation = `# Update the server
   apt update && apt upgrade -y
@@ -50,5 +50,5 @@ const ubuntuInstallation = `# Update the server
   # Add universe repository if you are on Ubuntu 18.04
   apt-add-repository universe
   # Install Dependencies
-  apt -y install php8.3 php8.3-{common,cli,gd,mysql,mbstring,bcmath,xml,fpm,curl,zip} mariadb-server nginx tar unzip zip git redis-server dos2unix`
+  apt -y install php8.3 php8.3-{common,cli,gd,mysql,mbstring,bcmath,xml,fpm,curl,zip} mariadb-server nginx tar unzip zip git redis-server dos2unix`;
 </script>

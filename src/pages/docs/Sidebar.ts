@@ -9,7 +9,22 @@ export const sections = [
             { title: 'Congratulations', path: '/docs/mythicaldash/congratulations' },
             { title: 'Update', path: '/docs/mythicaldash/update' },
             { title: 'Uninstall', path: '/docs/mythicaldash/uninstall' },
-            { title: 'FAQ', path: '/docs/mythicaldash/faq' }
+            { title: 'FAQ', path: '/docs/mythicaldash/faq' },
+        ],
+    },
+    {
+        title: 'MythicalAdmin',
+        items: [
+            { title: 'Introduction', path: '/docs/mythicaladmin/intro' },
+            { title: 'Customize', path: '/docs/mythicaladmin/customize' },
+        ],
+    },
+    {
+        title: 'MCUtils',
+        items: [
+            { title: 'Introduction', path: '/docs/mcutils/intro' },
+            { title: 'Standalone', path: '/docs/mcutils/standalone' },
+            { title: 'Blueprint', path: '/docs/mcutils/blueprint' },
         ],
     },
     {
@@ -18,7 +33,7 @@ export const sections = [
             { title: 'Create SSL', path: '/docs/general/create-ssl' },
             { title: 'Config MySQL [REMOTE]', path: '/docs/general/config-mysql' },
             { title: 'Config Date', path: '/docs/general/config-date' },
-            { title: 'Config SSH Key', path: '/docs/general/config-ssh' }
+            { title: 'Config SSH Key', path: '/docs/general/config-ssh' },
         ],
-    }
+    },
 ];

@@ -5,8 +5,8 @@
                 <Card title="Frequently Asked Questions">
                     <h1 class="text-3xl font-bold mb-4">MythicalDash FAQ</h1>
                     <p class="mb-4">
-                        Here you'll find answers to common questions and issues about MythicalDash.
-                        If you can't find what you're looking for, feel free to join our Discord support server.
+                        Here you'll find answers to common questions and issues about MythicalDash. If you can't find
+                        what you're looking for, feel free to join our Discord support server.
                     </p>
 
                     <!-- FAQ Questions -->
@@ -18,8 +18,8 @@
                     </div>
                 </Card>
 
-                <br>
-                
+                <br />
+
                 <Card title="Need More Help?">
                     <div class="mt-8 flex justify-center space-x-4 items-center">
                         <Button href="https://discord.mythical.systems" class="bg-purple-500 hover:bg-purple-700">
@@ -117,7 +117,6 @@ const faqs = [
     {
         question: 'Is there a youtube video on how to install MythicalDash?',
         answer: `Yes, you can find a video on how to install MythicalDash on YouTube. <a href="https://www.youtube.com/watch?v=8lsBegNFBbE" target="_blank" class="text-blue-500">Watch now</a>`,
-    }
-
+    },
 ];
 </script>

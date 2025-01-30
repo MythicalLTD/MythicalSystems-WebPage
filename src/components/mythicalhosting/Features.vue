@@ -61,6 +61,5 @@ const features = [
         title: 'Instant Activation',
         description: 'Get your server up and running in minutes with our automated provisioning.',
     },
-
 ];
 </script>

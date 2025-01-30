@@ -1,10 +1,10 @@
 <template>
     <section class="py-20 relative overflow-hidden">
         <div class="container mx-auto px-4">
-            <h2
-                class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-violet-400 bg-clip-text text-transparent"
-            >
-                Why Choose Mythical?
+            <h2 class="text-5xl font-bold text-center mb-8 animate-fade-in">
+                <span class="bg-gradient-to-r from-purple-400 via-pink-400 to-violet-400 bg-clip-text text-transparent">
+                    Why us?
+                </span>
             </h2>
             <p class="text-center text-gray-300 mb-12 max-w-3xl mx-auto">
                 MythicalSystems takes great pride in offering a wide range of projects that are completely free for the

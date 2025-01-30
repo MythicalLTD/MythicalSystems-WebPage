@@ -26,7 +26,7 @@ export const navItems = ref([
         name: 'Links',
         link: '#',
         submenu: [
-            { name: 'Docs', link: '/docs'},
+            { name: 'Docs', link: '/docs' },
             { name: 'Status Page', link: 'https://status.mythical.systems' },
             { name: 'Pterodactyl Panel', link: 'https://panel.mythical.systems' },
             { name: 'Billing Area', link: 'https://billing.mythical.systems' },
@@ -72,11 +72,11 @@ export const navItems = ref([
         open: false,
     },
     {
-        name: "Donate",
+        name: 'Donate',
         submenu: [
-            { name: "Stripe", link: "https://donate.stripe.com/00gcO2epX5yj2ysfYY" },
-            { name: "PayPal", link: "https://paypal.me/nayskutzu" }
+            { name: 'Stripe', link: 'https://donate.stripe.com/00gcO2epX5yj2ysfYY' },
+            { name: 'PayPal', link: 'https://paypal.me/nayskutzu' },
         ],
-        open: false
-    }
+        open: false,
+    },
 ]);

@@ -15,13 +15,16 @@
                         dedicated support channels to ask your question.
                     </p>
                 </Card>
-                <br>
+                <br />
                 <Card title="Get Started">
                     <div class="mt-8 flex justify-center space-x-4 items-center">
                         <Button href="/docs/mythicaldash/installation" class="bg-blue-500 hover:bg-blue-700">
                             <List class="inline-block mr-2" /> Get Started
                         </Button>
-                        <Button href="https://github.com/mythicalltd/mythicaldash" class="bg-yellow-500 hover:bg-yellow-700">
+                        <Button
+                            href="https://github.com/mythicalltd/mythicaldash"
+                            class="bg-yellow-500 hover:bg-yellow-700"
+                        >
                             <Star class="inline-block mr-2" /> Star Us on GitHub
                         </Button>
                         <Button href="https://discord.mythical.systems" class="bg-purple-500 hover:bg-purple-700">
