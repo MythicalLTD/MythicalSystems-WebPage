@@ -1,14 +1,17 @@
 <template>
     <section class="py-16 relative overflow-hidden">
         <div class="container mx-auto px-4">
-            <h2
-                class="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-purple-400 to-violet-400 bg-clip-text text-transparent"
-            >
-                What Our Clients Say
-            </h2>
-            <p class="text-center text-gray-300 mb-12 max-w-3xl mx-auto">
-                Hear from our satisfied clients and discover the impact of our services on their businesses.
-            </p>
+          <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold mb-6">
+                    <span class="bg-gradient-to-r from-purple-400 via-pink-400 to-violet-400 bg-clip-text text-transparent">
+                        What Our Clients Say
+                    </span>
+                </h2>
+                <p class="text-gray-300 max-w-2xl mx-auto text-lg">
+                    Hear from our satisfied clients and discover the impact of our services on their businesses.
+                </p>
+            </div>
+
 
             <!-- Testimonials Slider -->
             <div class="relative max-w-7xl mx-auto">

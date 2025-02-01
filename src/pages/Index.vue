@@ -11,6 +11,9 @@
             <Statistics />
         </div>
         <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+            <Team />
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
             <Testimonials />
         </div>
         <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
@@ -37,7 +40,7 @@ import Testimonials from '@/components/homepage/Testimonials.vue';
 import Faq from '@/components/homepage/Faq.vue';
 import ReachUs from '@/components/homepage/ReachUs.vue';
 import Sponsors from '@/components/homepage/Sponsors.vue';
-
+import Team from '@/components/homepage/Team.vue';
 onMounted(() => {
     AOS.init({
         duration: 1000,
