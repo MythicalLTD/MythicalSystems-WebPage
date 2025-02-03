@@ -103,7 +103,8 @@ Route::group(['prefix' => 'mythicalsystems'], function () {
 });`;
 
 const cacheCommands = `php artisan view:clear
-php artisan config:clear`;
+php artisan config:clear
+php artisan optimize:clear`;
 </script>
 
 <style scoped>
