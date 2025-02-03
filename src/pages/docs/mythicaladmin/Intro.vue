@@ -80,6 +80,7 @@ const unzipCommand = `unzip -o MythicalUI.zip`;
 const migrationCommand = `php artisan migrate --seed --force`;
 
 const routesConfig = `/*
+/*
 |--------------------------------------------------------------------------
 | Mythical Systems Controller Routes
 |--------------------------------------------------------------------------
@@ -88,23 +89,27 @@ const routesConfig = `/*
 |
 */
 Route::group(['prefix' => 'mythicalsystems'], function () {
-    Route::get('/', [Admin\\MythicalSystems\\LogsController::class, 'index'])
-        ->name('admin.mythicalsystems');
-    Route::get('/logs', [Admin\\MythicalSystems\\LogsController::class, 'index'])
-        ->name('admin.mythicalsystems.logs');
-    Route::post('/logs/clear', [Admin\\MythicalSystems\\LogsController::class, 'clearLogs'])
-        ->name('admin.mythicalsystems.logs.clear');
-    Route::get('/logs/download', [Admin\\MythicalSystems\\LogsController::class, 'downloadLogs'])
-        ->name('admin.mythicalsystems.logs.download');
-    Route::get('/stats', [Admin\\MythicalSystems\\StatsController::class, 'index'])
-        ->name('admin.mythicalsystems.stats');
-    Route::get('/health', [Admin\\MythicalSystems\\HealthController::class, 'index'])
-        ->name('admin.mythicalsystems.health');
-});`;
+    Route::get('/', [Admin\\MythicalSystems\\LogsController::class, 'index'])->name('admin.mythicalsystems');
+    Route::get('/logs', [Admin\\MythicalSystems\\LogsController::class, 'index'])->name('admin.mythicalsystems.logs');
+    Route::post('/logs/clear', [Admin\\MythicalSystems\\LogsController::class, 'clearLogs'])->name('admin.mythicalsystems.logs.clear');
+    Route::get('/logs/download', [Admin\\MythicalSystems\\LogsController::class, 'downloadLogs'])->name('admin.mythicalsystems.logs.download');
+
+    Route::get('/stats', [Admin\\MythicalSystems\\StatsController::class, 'index'])->name('admin.mythicalsystems.stats');
+
+    Route::get('/activity', [Admin\\MythicalSystems\\ActivityController::class, 'index'])->name(name: 'admin.mythicalsystems.activity');
+    Route::get('/health', [Admin\\MythicalSystems\\HealthController::class, 'index'])->name(name: 'admin.mythicalsystems.health');
+
+    Route::get('/mythicalui', [Admin\\MythicalSystems\\MythicalUIController::class, 'index'])->name('admin.mythicalsystems.mythicalui');
+    Route::post('/mythicalui/update', [Admin\\MythicalSystems\\MythicalUIController::class, 'update'])->name('admin.mythicalsystems.mythicalui.update');
+    Route::post('/mythicalui/template', [Admin\\MythicalSystems\\MythicalUIController::class, 'applyTemplate'])->name('admin.mythicalsystems.mythicalui.template');
+    Route::get('/mythicalui/api-tester', [Admin\\MythicalSystems\\ApiTesterController::class, 'index'])->name('admin.mythicalsystems.api-tester');
+    Route::post('/mythicalui/upload-image', [Admin\\MythicalSystems\\MythicalUIController::class, 'uploadImage'])->name('admin.mythicalsystems.mythicalui.upload-image');
+});;`;
 
 const cacheCommands = `php artisan view:clear
 php artisan config:clear
 php artisan optimize:clear
+php artisan route:clear
 php artisan storage:link
 `;
 </script>

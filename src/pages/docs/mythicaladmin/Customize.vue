@@ -18,6 +18,20 @@
                             </p>
                         </div>
                     </Card>
+
+                    <Card title="Support Pterodactyl CSS">
+                        <p class="mb-4">
+                            To support Pterodactyl CSS, add the following line to your blade file:
+                        </p>
+                        <CodeBlock language="php" :code="supportPterodactylCSS" />
+                        <div class="mt-4 bg-yellow-500/20 border border-yellow-500/30 rounded-lg p-4">
+                            <p class="text-yellow-300 font-semibold">⚠️ Note</p>
+                            <p class="text-yellow-200 mt-2">
+                                This will add support for the legacy CSS files of the Pterodactyl panel, applying their old styles to the specific page you choose.
+                                Please avoid including this in the main file, as it will degrade performance and negatively affect the theme's appearance.
+                            </p>
+                        </div>
+                    </Card>
                 </div>
             </div>
         </div>
@@ -38,4 +52,8 @@ const newItemExample = `@include('admin.partials.sidebar-section', [
                 ]
             ]
         ]);`;
+
+const supportPterodactylCSS = `@include('admin.partials.pterodactylcss')
+`;
 </script>
+    
