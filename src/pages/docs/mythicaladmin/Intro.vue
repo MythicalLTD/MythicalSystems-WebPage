@@ -80,7 +80,6 @@ const unzipCommand = `unzip -o MythicalUI.zip`;
 const migrationCommand = `php artisan migrate --seed --force`;
 
 const routesConfig = `/*
-/*
 |--------------------------------------------------------------------------
 | Mythical Systems Controller Routes
 |--------------------------------------------------------------------------
