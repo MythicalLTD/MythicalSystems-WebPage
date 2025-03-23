@@ -19,15 +19,15 @@
                     </p>
                 </Card>
             </div>
-            <Card>
+            <!--<Card>
                 <ResourceUsage />
-            </Card>
+            </Card>-->
         </div>
     </section>
 </template>
 
 <script setup lang="ts">
 import Card from '@/components/ui/Card.vue';
-import ResourceUsage from './ResourceUsage.vue';
+//import ResourceUsage from './ResourceUsage.vue';
 import { stats } from '@/config/Stats';
 </script>

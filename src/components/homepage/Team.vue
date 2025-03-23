@@ -138,17 +138,27 @@ const team: TeamMember[] = [
         name: 'NaysKutzu',
         role: 'Founder & Lead Developer',
         description: 'Passionate about creating innovative solutions and leading the team towards excellence.',
-        avatar: 'https://github.com/CassianGherman.png',
+        avatar: 'https://mc-heads.net/avatar/NaysKutzu',
         socials: [
             { platform: 'GitHub', url: 'https://github.com/nayskutzu', icon: Github },
             { platform: 'Twitter', url: 'https://twitter.com/nayskutzu', icon: Twitter }
         ]
     },
     {
+      name: "Maria",
+      role: "Founder & Ceo",
+      description: "Passionate about creating innovative solutions and leading the team towards excellence.",
+      avatar: "https://mc-heads.net/avatar/Maria_Int",
+      socials: [
+        {
+          platform: "Email", url: "mailto:maria@mythical.systems", icon: Mail}
+        ]
+    },
+    {
         name: 'Nyxalis',
         role: 'Owner & Lead Developer',
         description: 'Specializing in creating innovative solutions and leading the team towards excellence.',
-        avatar: 'https://github.com/Nyxalis.png',
+        avatar: 'https://mc-heads.net/avatar/Nyxalis',
         socials: [
             { platform: 'GitHub', url: 'https://github.com/Nyxalis', icon: Github },
             { platform: 'Email', url: 'mailto:nyxalis@mythical.systems', icon: Mail }
