@@ -17,30 +17,6 @@
                         <p class="text-gray-400 flex-grow">{{ doc.description }}</p>
                     </div>
                 </router-link>
-
-                <router-link to="/docs/mythicaladmin/intro" class="block">
-                    <div
-                        class="bg-gray-900/40 backdrop-blur-lg rounded-lg overflow-hidden border border-gray-800/30 shadow-xl hover:bg-gray-900/60 transition-colors p-6 h-full flex flex-col"
-                    >
-                        <Box class="w-12 h-12 text-purple-400 mb-4" />
-                        <h2 class="text-xl font-semibold text-purple-300 mb-2">MythicalAdmin</h2>
-                        <p class="text-gray-400 flex-grow">
-                            Learn how to install and customize MythicalAdmin for pterodactyl panel.
-                        </p>
-                    </div>
-                </router-link>
-
-                <router-link to="/docs/mcutils/intro" class="block">
-                    <div
-                        class="bg-gray-900/40 backdrop-blur-lg rounded-lg overflow-hidden border border-gray-800/30 shadow-xl hover:bg-gray-900/60 transition-colors p-6 h-full flex flex-col"
-                    >
-                        <Box class="w-12 h-12 text-purple-400 mb-4" />
-                        <h2 class="text-xl font-semibold text-purple-300 mb-2">MCUtils</h2>
-                        <p class="text-gray-400 flex-grow">
-                            Learn how to install and customize MCUtils for pterodactyl panel.
-                        </p>
-                    </div>
-                </router-link>
             </div>
         </div>
     </div>
@@ -54,6 +30,24 @@ const documentationTypes = [
         title: 'MythicalDash',
         description: 'Learn how to use and configure MythicalDash for your projects.',
         path: '/docs/mythicaldash/intro',
+        icon: Box,
+    },
+    {
+        title: 'MythicalDash Remastered',
+        description: 'Learn how to use and configure MythicalDash Remastered for your projects.',
+        path: '/docs/mythicaldash-remastered/intro',
+        icon: Box,
+    },
+    {
+        title: 'MythicalAdmin',
+        description: 'Learn how to use and configure MythicalAdmin for your projects.',
+        path: '/docs/mythicaladmin/intro',
+        icon: Box,
+    },
+    {
+        title: 'MCUtils',
+        description: 'Learn how to use and configure MCUtils for your projects.',
+        path: '/docs/mcutils/intro',
         icon: Box,
     },
 ];

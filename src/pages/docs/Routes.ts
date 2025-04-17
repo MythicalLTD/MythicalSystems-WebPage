@@ -96,4 +96,16 @@ export const MythicalDashDocs: Array<{ path: string; name: string; component: ()
         path: '/docs/mcutils/blueprint',
         component: () => import('@/pages/docs/mcutils/Blueprint.vue'),
     },
+    {
+        name: 'MythicalDash Remastered - Intro',
+        path: '/docs/mythicaldash-remastered/intro',
+        component: () => import('@/pages/docs/mythicaldash-remastered/Intro.vue'),
+    },
+    {
+        name: 'MythicalDash Remastered - Installation',
+        path: '/docs/mythicaldash-remastered/installation',
+        component: () => import('@/pages/docs/mythicaldash-remastered/Install.vue'),
+    },
+
+
 ];

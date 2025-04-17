@@ -31,16 +31,17 @@ const routes = [
         name: 'MythicalHosting',
         component: () => import('@/pages/MythicalHosting.vue'),
     },
+    {
+        path: '/docs',
+        name: 'Docs',
+        component: () => import('@/pages/docs/Redirect.vue'),
+    },
+    {
+        path: '/docs/:pathMatch(.*)*',
+        name: 'Docs',
+        component: () => import('@/pages/docs/Redirect.vue'),
+    },
 ];
-
-import { MythicalDashDocs } from '@/pages/docs/Routes';
-
-routes.push(
-    ...MythicalDashDocs.map((route) => ({
-        ...route,
-        component: () => route.component().then((module) => module.default || module),
-    })),
-);
 
 routes.push({
     path: '/:pathMatch(.*)*',

@@ -1,15 +1,10 @@
 export const sections = [
+
     {
-        title: 'MythicalDash V3',
+        title: 'MythicalDash',
         items: [
-            { title: 'Introduction', path: '/docs/mythicaldash/intro' },
-            { title: 'Installation', path: '/docs/mythicaldash/installation' },
-            { title: 'Create SSL', path: '/docs/general/create-ssl' },
-            { title: 'WebServer', path: '/docs/mythicaldash/webserver' },
-            { title: 'Congratulations', path: '/docs/mythicaldash/congratulations' },
-            { title: 'Update', path: '/docs/mythicaldash/update' },
-            { title: 'Uninstall', path: '/docs/mythicaldash/uninstall' },
-            { title: 'FAQ', path: '/docs/mythicaldash/faq' },
+            { title: 'Introduction', path: '/docs/mythicaldash-remastered/intro' },
+            { title: 'Installation', path: '/docs/mythicaldash-remastered/installation' },
         ],
     },
     {
@@ -36,4 +31,17 @@ export const sections = [
             { title: 'Config SSH Key', path: '/docs/general/config-ssh' },
         ],
     },
+    {
+      title: 'MythicalDash (Legacy)',
+      items: [
+          { title: 'Introduction', path: '/docs/mythicaldash/intro' },
+          { title: 'Installation', path: '/docs/mythicaldash/installation' },
+          { title: 'Create SSL', path: '/docs/general/create-ssl' },
+          { title: 'WebServer', path: '/docs/mythicaldash/webserver' },
+          { title: 'Congratulations', path: '/docs/mythicaldash/congratulations' },
+          { title: 'Update', path: '/docs/mythicaldash/update' },
+          { title: 'Uninstall', path: '/docs/mythicaldash/uninstall' },
+          { title: 'FAQ', path: '/docs/mythicaldash/faq' },
+      ],
+  },
 ];
