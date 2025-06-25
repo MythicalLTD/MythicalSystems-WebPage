@@ -65,10 +65,4 @@ export const testimonials = [
         avatar: '/img/logos/mythical/mythical.png',
         quote: "I mean for the price. I'm pretty happy with it. It will help clients who are looking to do cool stuff and make it more convenient.",
     },
-    {
-        name: 'Sigma Boi',
-        position: 'User, Member',
-        avatar: '/img/logos/mythical/mythical.png',
-        quote: 'Shity products and services, I would not recommend this to anyone.',
-    },
 ];

@@ -152,6 +152,25 @@
                     >
                         {{ link.name }}
                     </a>
+                    <!-- ANPC Online Dispute Resolution -->
+                    <a
+                        href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=EN"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex items-center space-x-2"
+                        aria-label="Soluționarea online a litigiilor (ODR Platform)"
+                    >
+                        <img src="/anpc-sol.png" alt="Soluționarea online a litigiilor" class="h-8" />
+                    </a>
+                    <a
+                        href="https://reclamatiisal.anpc.ro/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex items-center space-x-2"
+                        aria-label="Soluționarea Alternativă a Litigiilor (SAL ANPC)"
+                    >
+                        <img src="/anpc-sal.webp" alt="Soluționarea Alternativă a Litigiilor" class="h-8" />
+                    </a>
                 </div>
             </div>
         </div>

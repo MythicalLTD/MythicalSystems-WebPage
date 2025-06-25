@@ -35,7 +35,9 @@
                     :enter="{ opacity: 1, y: 0, transition: { duration: 1000, delay: 400, ease: 'easeOut' } }"
                 >
                     <Button href="/docs" variant="primary" class="px-8 py-4"> Innovate with Mythical </Button>
-                    <Button href="/docs" variant="secondary" class="px-8 py-4">Sponsor Us</Button>
+                    <Button href="https://donate.stripe.com/00gcO2epX5yj2ysfYY" variant="secondary" class="px-8 py-4"
+                        >Sponsor Us</Button
+                    >
                 </div>
             </div>
 

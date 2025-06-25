@@ -1,6 +1,6 @@
 export const products = [
     {
-        name: 'MythicalDash V3',
+        name: 'MythicalDash Remastered',
         description: 'Open-Source Client Area for Pterodactyl Panel designed for free hosting providers.',
         image: '/img/mythicaldash.png',
         technologies: ['PhP', 'MySQL', 'Pterodactyl Panel API', 'Vuexy'],
@@ -16,39 +16,7 @@ export const products = [
         link: 'https://www.mythical.systems/docs/mythicaldash-v3/install',
         purchaseLink: '/docs',
         purchasePrice: '0.00',
-        demoLink: 'https://mythicaldash.mythical.systems',
-    },
-    {
-        name: 'MythicalClient',
-        description: 'High-performance, scalable whmcs style client area for hosting big enterprise providers.',
-        image: '/img/mythicalclient.png',
-        technologies: ['VueJs', 'Distributed Systems', 'PhP', 'MySQL'],
-        fullDescription:
-            'MythicalClient is a high-performance, scalable client area for hosting big enterprise providers. It is designed to be highly customizable and scalable to meet the needs of any hosting provider. MythicalClient is built on a distributed system architecture that allows it to scale horizontally as needed. It is highly secure and reliable, with built-in redundancy and failover capabilities. MythicalClient is designed to be highly customizable, with a wide range of features and options that can be tailored to meet the needs of any hosting provider. It is built on modern technologies and frameworks, including Vue.js, PHP, and MySQL, and is designed to be easy to use and maintain. MythicalClient is the perfect solution for hosting big enterprise providers that need a high-performance, scalable client area that can meet the needs of their customers.',
-        features: ['Highly Scalable', 'High Performance', 'Highly Customizable', 'Highly Secure', 'Highly Reliable'],
-        images: ['/img/mythicalclient.png'],
-        purchaseLink: 'https://mythicalclient.mythical.systems',
-        purchasePrice: 'FROM 0.00',
-        demoLink: 'https://framework.mythical.systems',
-    },
-    {
-        name: 'MythicalHosting',
-        description: 'High-performance, scalable hosting solutions for all your needs.',
-        image: '/img/mythicalhosting.png',
-        technologies: ['Hosting'],
-        fullDescription:
-            'MythicalHosting is a high-performance, scalable hosting solution that is designed to meet the needs of any website or application. With MythicalHosting, you get a reliable, high-performance hosting solution that is backed by a team of experts who are dedicated to providing you with the best possible service. MythicalHosting offers a wide range of features and options that are designed to meet the needs of any website or application, including 24/7 support, 98.8% uptime, high performance, unlimited bandwidth, daily backups, and 10Gb/s network connectivity. Whether you are hosting a small personal website or a large enterprise application, MythicalHosting has the solution for you.',
-        features: [
-            '24/7 Support',
-            '98.8% Uptime',
-            'High Performance',
-            'Unlimited Bandwidth',
-            'Daily Backups',
-            '10Gb/s Network',
-        ],
-        images: ['/img/mythicalhosting.png'],
-        purchaseLink: '/mythicalhosting',
-        purchasePrice: 'FROM 1.00',
+        demoLink: 'https://mythicaldash-v3.mythical.systems',
     },
     {
         name: 'MythicalUI - Pterodactyl Admin Theme',
