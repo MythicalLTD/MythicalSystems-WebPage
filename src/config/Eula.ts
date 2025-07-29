@@ -1,75 +1,175 @@
 import { MdTextParser } from '../utils/MdTextParser';
 
-export const eula = MdTextParser.mdToHtml(`# MythicalSystems End User License Agreement (EULA)
+export const eula = MdTextParser.mdToHtml(`# MythicalSystems License v2.0
 
-This End User License Agreement ("EULA") constitutes a binding legal agreement between you ("the User") and MythicalSystems Ltd. or its applicable local affiliates (collectively referred to as "MythicalSystems"). 
+## Copyright (c) 2021–2025 MythicalSystems and Cassian Gherman
 
-By accessing or using any MythicalSystems services, software, or content ("Services"), you acknowledge that you have read, understood, and agree to be bound by the terms and conditions of this EULA and the MythicalSystems Services Agreement. Please read these terms carefully.
+### Preamble
+This license governs the use, modification, and distribution of the software known as MythicalDash or MythicalDash ("the Software"). By using the Software, you agree to the terms outlined in this document. These terms aim to protect the Software's integrity, ensure fair use, and establish guidelines for authorized distribution, modification, and commercial use.
 
-## 1. Scope of Agreement
+For any inquiries, abuse reports, or violation notices, contact us at [abuse@mythical.systems](mailto:abuse@mythical.systems).
 
-This EULA, together with the MythicalSystems Services Agreement, governs your use of all MythicalSystems websites, software, products, and services, including any updates, patches, or modifications that may be provided in the future. By accepting these terms, you also agree to abide by any supplemental policies, including but not limited to our community standards and Software Usage Guidelines, which may be updated from time to time.
+---
 
-## 2. Ownership and Intellectual Property
+## 1. Grant of License
 
-While MythicalSystems values your creative contributions, we retain exclusive ownership of all proprietary software, code, content, and intellectual property developed by us. You are granted a non-exclusive, non-transferable, and revocable license to use our Services in accordance with this EULA.
+### 1.1. Usage Rights
+- You are granted a non-exclusive, revocable license to use the Software, provided you comply with the terms herein.
+- The Software must be linked to an active account on our public platform, MythicalSystems.
 
-Your original works, including plugins, themes, and modifications, remain your property, provided they do not incorporate a substantial portion of MythicalSystems' code or intellectual property. MythicalSystems does not claim ownership of your original creations, but we reserve the right to determine whether content contains infringing elements.
+### 1.2. Modification Rights
+- You may modify the Software only for personal use and must not distribute modified versions unless explicitly approved by MythicalSystems or Cassian Gherman.
 
-### 2.1 Restrictions on Distribution
+### 1.3. Redistribution and Commercial Use
+- Redistribution of the Software, whether modified or unmodified, is strictly prohibited unless explicitly authorized in writing by MythicalSystems or Cassian Gherman.
+- Selling the Software or its derivatives is only permitted on authorized marketplaces specified by MythicalSystems.
+- Unauthorized leaking, sharing, or redistribution of the Software or its components is illegal and subject to legal action.
 
-You are expressly prohibited from distributing, sublicensing, or commercially exploiting any MythicalSystems software, content, or services without prior written consent from MythicalSystems. This includes but is not limited to sharing, copying, or reselling our products, software, and any related modifications or derivatives.
+### 1.4. Third-Party Addons and Plugins
+- The creation, sale, and distribution of third-party addons or plugins for the Software are permitted, provided they comply with this license.
+- All third-party addons or plugins must not attempt to bypass, modify, or interfere with the core functionality or licensing requirements of the Software.
 
-## 3. Account Usage and Terms
+### 1.5. Forking
+- Forking the Software is allowed, provided that the forked version continues to comply with all terms and conditions outlined in this license. Any modifications made in the fork must respect the original license and maintain all attributions and copyright notices.
+- Redistribution of forked versions is subject to the same restrictions as the original Software, requiring explicit authorization from MythicalSystems or Cassian Gherman.
+- Forked versions must not attempt to bypass, modify, or interfere with the core functionality or licensing requirements of the Software.
+- Unauthorized leaking, sharing, or redistribution of forked versions is illegal and subject to legal action.
+- Forked versions must be linked to an active account on our public platform, MythicalSystems.
 
-A MythicalSystems account is required to access certain features, purchase services, or interact with MythicalSystems platforms. You are responsible for maintaining the security and confidentiality of your account credentials. If you acquire any MythicalSystems product via a third-party platform (e.g., Spigot or BuiltByBit), the respective terms of that platform will also apply in conjunction with this EULA.
+---
 
-MythicalSystems reserves the right to suspend or terminate accounts that are in breach of this EULA or related agreements.
+## 2. Restrictions
 
-## 4. Permitted Modifications (Plugins and Themes)
+### 2.1. Account Requirement
+- The Software requires an active account on MythicalSystems. Attempts to modify, bypass, or remove this requirement are strictly prohibited.
 
-We encourage the development of plugins, themes, and other creative contributions, subject to the following conditions:
+### 2.2. Unauthorized Use
+- Use of the Software to perform unauthorized actions, including but not limited to exploiting vulnerabilities, bypassing authentication, or reverse engineering, is prohibited.
 
-- **Plugins and Themes must not contain significant portions of MythicalSystems' proprietary code.**
-- **Originality:** Any plugin or theme created by you must be your own original work.
-- **Commercial Restrictions:** You are not permitted to sell plugins or themes for excessive or inflated prices. Nulled or unauthorized versions of plugins and themes are strictly forbidden.
-- **Compatibility:** MythicalSystems assumes no responsibility for ensuring that your plugins or themes will be compatible with future updates or modifications to our Services.
+### 2.3. Leaking and Distribution
+- Any unauthorized leaking, sharing, or distribution of the Software is a direct violation of this license. Legal action will be taken against violators.
+- Leaked or pirated copies of the Software are considered illegal, and users found utilizing such versions will face immediate termination of access and potential legal consequences.
 
-We reserve the right to review, approve, or revoke permissions for plugins and themes at any time.
+### 2.4. Modification of Terms
+- The terms and conditions of this license may not be modified, replaced, or overridden in any distributed version of the Software.
 
-## 5. Content Ownership
+---
 
-Your content remains your own, including any text, images, or code that you develop independently. However, MythicalSystems retains ownership of any substantial derivative works or content that incorporates or mimics our proprietary software, designs, or materials.
+## 3. Attribution and Copyright
 
-For example:
+### 3.1. Attribution
+- You must retain all copyright notices, attributions, and references to MythicalSystems and Cassian Gherman in all copies, derivatives, or distributions of the Software.
 
-- If your plugin consists of less than 100 lines of code based on MythicalSystems' core code, we maintain ownership of that derivative work.
-- If you create a standalone plugin with significant new functionality (e.g., Discord integration) containing over 400 lines of code, you retain ownership of that original creation.
+### 3.2. Copyright Invariance
+- Copyright notices must remain intact and unaltered in all versions of the Software, including modified versions.
 
-## 6. Community Standards and Online Safety
+---
 
-MythicalSystems is committed to fostering a safe, respectful, and inclusive community. As a user of our Services, you agree to uphold these values and avoid engaging in any activities that promote hate speech, harassment, violence, or illegal conduct. Fraudulent behavior, such as using deceit or misrepresentation for personal gain, is strictly prohibited.
+## 4. Legal and Liability Terms
 
-Interactions with others through our Services, third-party platforms, or community forums are at your own risk. We advise caution when sharing personal information or communicating with others, as MythicalSystems cannot guarantee the authenticity or integrity of third-party participants.
+### 4.1. Disclaimer of Liability
+- The Software is provided "as is," without any warranty, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.
+- MythicalSystems and Cassian Gherman shall not be held liable for any damages arising from the use, misuse, or inability to use the Software, including but not limited to:
+  - Loss of data, profits, or revenue.
+  - Security vulnerabilities such as SQL injection, zero-day exploits, or other potential risks.
+  - System failures, downtime, or disruptions.
 
-We reserve the right to suspend or permanently ban any user who violates these standards or any other terms of this EULA.
+### 4.2. Enforcement
+- Violations of this license will result in immediate termination of access to the Software and may involve legal action.
+- MythicalSystems reserves the right to suspend or terminate access to any user, client, or hosting provider without prior notice.
 
-## 7. Legal Compliance and Amendments
+### 4.3. No Guarantees
+- MythicalSystems does not guarantee uninterrupted or error-free operation of the Software.
 
-This EULA and any supplemental policies may be updated or amended by MythicalSystems at any time, without prior notice. It is your responsibility to review these terms periodically to ensure compliance. Continued use of MythicalSystems' Services after changes to the EULA signifies your acceptance of the revised terms.
+---
 
-## 8. Limitation of Liability
+## 5. Privacy and Data Sharing
 
-To the fullest extent permitted by law, MythicalSystems shall not be held liable for any indirect, incidental, or consequential damages resulting from the use or inability to use our Services, including but not limited to lost profits, data loss, or compatibility issues arising from third-party plugins or updates.
+### 5.1. Public Information
+- Some user information may be shared with third parties or made publicly visible in accordance with our Privacy Policy and Terms of Service. For more details, please visit:
+  - [Privacy Policy](https://www.mythical.systems/privacy)
+  - [Terms of Service](https://www.mythical.systems/terms)
 
-## 9. Termination
+### 5.2. Data Collection
+- The Software may collect and transmit anonymized usage data to improve performance and functionality.
 
-Failure to comply with this EULA may result in immediate termination of your license and access to MythicalSystems' Services. MythicalSystems reserves the right to terminate or suspend access to any account, service, or content without notice if the User violates any provision of this EULA.
+---
 
-## 10. Governing Law
+## 6. Governing Law
 
-This EULA shall be governed by and construed in accordance with the laws of the jurisdiction in which MythicalSystems Ltd. is established, without regard to conflicts of law principles. Any disputes arising from this EULA shall be resolved in the courts of that jurisdiction.
+### 6.1. Jurisdiction
+- This license shall be governed and construed in accordance with the laws of Romania.
 
-## 11. Contact Information
+### 6.2. Dispute Resolution
+- All disputes arising under or in connection with this license shall be subject to the exclusive jurisdiction of the courts in Romania.
 
-For any questions regarding this EULA or MythicalSystems' Services, please contact us at \`hello@mythical.systems\`.`);
+### 6.3. GDPR
+- You may send us an email to remove your data or your hosting's data at: gdpr@mythical.systems and we will take care of it in the next 7 working days!
+
+---
+
+## 7. Termination
+
+### 7.1. Violation of Terms
+- MythicalSystems reserves the right to terminate access to the Software for any user found in violation of this license.
+
+### 7.2. Immediate Termination
+- Termination may occur immediately and without prior notice.
+
+---
+
+## 8. Contact Information
+For abuse reports, legal inquiries, or support, contact [abuse@mythical.systems](mailto:abuse@mythical.systems).
+
+---
+
+## 9. Acceptance
+By using, modifying, or distributing the Software, you agree to the terms outlined in this license.
+
+---
+
+## 10. Additional Terms
+### 10.1. OAuth Authentication
+- If you use the Software in conjunction with OAuth or similar, you acknowledge and agree that the system may automatically:
+  - Star the **MythicalDash** repository or any related public repositories owned by the **MythicalSystems** organization.
+  - Follow the **MythicalDash** organization on GitHub on behalf of your authenticated GitHub account.
+- If you use Discord authentication, you acknowledge and agree that the system may automatically:
+  - Join the official **MythicalSystems** Discord server on behalf of your authenticated Discord account.
+- This behavior is intended to support the community and visibility of the Software and is considered part of the license terms.
+
+### 10.2. Hosting Provider Requirements
+- If you are a hosting provider offering the Software as a managed service or as part of your hosting panel, you must:
+  - Explicitly include this license in your Terms of Service (ToS) or User Agreement.
+  - Ensure that all end users are aware of and agree to the terms of the MythicalSystems License v2.0.
+  - Maintain a clear reference to **MythicalDash** and **MythicalSystems** in all relevant documentation, portals, and legal notices.
+
+### 10.3. User Data Collection and Sharing
+- By using the Software, you acknowledge and agree that certain user data may be collected and shared with MythicalSystems, including but not limited to:
+  - Account information (username, email address, first name, last name)
+  - Account status (banned status, verification status, 2FA settings)
+  - Connected service data (Discord and GitHub and Google account information)
+- This data collection is used for:
+  - Analyzing user behavior and Software usage patterns
+  - Supporting the ZeroTrust initiative to prevent abuse
+  - Enabling communication between hosting providers about potentially malicious users
+  - Improving Software security and functionality
+- MythicalSystems will handle all collected data in accordance with applicable privacy laws and regulations.
+- This data sharing agreement is considered an integral part of using the Software and cannot be opted out of while using the system.
+
+### 10.4. Data Privacy and Third-Party Sharing
+- Your personal data (including first name and last name) will never be shared with any third parties other than MythicalSystems and Cassian Gherman.
+- All data held by MythicalSystems can be requested for deletion, specifically:
+  - First name
+  - Last name
+- To request deletion of your personal data, please contact gdpr@mythical.systems
+- Data deletion requests will be processed within 7 working days of receipt
+
+### 10.5. Refund Policy for Digital Goods
+- **No Refunds for Digital Goods**: In accordance with the agreements established with BuiltByBit and Tebex, MythicalSystems does not provide refunds for digital goods, including but not limited to:
+  - Software licenses
+  - Digital downloads
+  - Access codes
+  - Virtual products
+- This no-refund policy applies to all digital products sold through authorized marketplaces and direct sales channels.
+- By purchasing any digital product from MythicalSystems, you acknowledge and agree to this no-refund policy.
+- Exceptions to this policy may only be granted at the sole discretion of MythicalSystems and must be requested in writing to [abuse@mythical.systems](mailto:abuse@mythical.systems).`);
