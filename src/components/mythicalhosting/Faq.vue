@@ -2,7 +2,7 @@
     <section class="py-20 relative overflow-hidden">
         <div class="container mx-auto px-4">
             <h2
-                class="text-4xl font-bold text-center mb-6 bg-gradient-to-r from-purple-400 to-violet-400 bg-clip-text text-transparent"
+                class="text-4xl font-bold text-center mb-6 bg-linear-to-r from-purple-400 to-violet-400 bg-clip-text text-transparent"
             >
                 Frequently Asked Questions
             </h2>
@@ -75,7 +75,10 @@ const faqs = ref([
 ]);
 
 const toggleFaq = (index: number) => {
-    faqs.value[index].isOpen = !faqs.value[index].isOpen;
+    const faq = faqs.value[index];
+    if (faq) {
+        faq.isOpen = !faq.isOpen;
+    }
 };
 </script>
 

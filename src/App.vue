@@ -1,10 +1,5 @@
 <template>
-    <Preloader :loading="isLoading" @fade-complete="onPreloaderFadeComplete" />
-
-    <div
-        class="min-h-screen bg-[#0a0a0f] text-white overflow-hidden transition-opacity duration-500"
-        :class="{ 'opacity-0': isLoading, 'opacity-100': !isLoading }"
-    >
+    <div class="min-h-screen bg-[#0a0a0f] text-white overflow-hidden">
         <AnimatedBackground />
         <div id="glowing-cursor"></div>
         <component :is="layout">
@@ -21,7 +16,6 @@ import { computed, onMounted, ref } from 'vue';
 import AnimatedBackground from '@/components/ui/AnimatedBackground.vue';
 import CustomContextMenu from '@/components/ui/CustomContextMenu.vue';
 import BackToTop from '@/components/ui/BackToTop.vue';
-import Preloader from '@/components/Preloader.vue';
 
 import BaseLayout from '@/layouts/BaseLayout.vue';
 import DocsLayout from '@/layouts/DocsLayout.vue';
@@ -36,17 +30,6 @@ const layout = computed(() => {
     return BaseLayout;
 });
 
-const isLoading = ref(true);
-const mainContentVisible = ref(false);
-
-const onPreloaderFadeComplete = () => {
-    mainContentVisible.value = true;
-};
-
-// Set loading to false when your content is ready
-setTimeout(() => {
-    isLoading.value = false;
-}, 2000);
 
 onMounted(() => {
     document.documentElement.classList.add('dark');
@@ -67,7 +50,11 @@ onMounted(() => {
 }
 
 .glass-effect {
-    @apply bg-gray-900/40 backdrop-blur-lg border border-gray-700/50;
+    background-color: rgba(17, 24, 39, 0.4); /* Equivalent to bg-gray-900/40 */
+    backdrop-filter: blur(16px); /* Equivalent to backdrop-blur-lg */
+    border-width: 1px; /* Equivalent to border */
+    border-style: solid;
+    border-color: rgba(55, 65, 81, 0.5); /* Equivalent to border-gray-700/50 */
 }
 
 #glowing-cursor {

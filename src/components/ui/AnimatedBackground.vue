@@ -38,18 +38,31 @@ onMounted(() => {
 
 <style scoped>
 .nebula {
-    @apply absolute w-96 h-96 rounded-full opacity-20 blur-3xl;
+    position: absolute;
+    width: 24rem;    /* 96 Tailwind units = 24 * 16px = 384px */
+    height: 24rem;   /* 96 Tailwind units = 384px */
+    border-radius: 9999px; /* fully rounded */
+    opacity: 0.2;
+    filter: blur(48px); /* 3xl blur in Tailwind is 48px */
     background: radial-gradient(circle, rgba(168, 85, 247, 0.5) 0%, rgba(168, 85, 247, 0.2) 70%, transparent 100%);
     animation: float 20s ease-in-out infinite;
 }
 
 .star {
-    @apply absolute w-1 h-1 bg-white rounded-full;
+    position: absolute;
+    width: 0.25rem;   /* 1 Tailwind unit = 0.25rem */
+    height: 0.25rem;
+    background-color: white;
+    border-radius: 9999px; /* fully rounded */
     animation: twinkle 3s infinite;
 }
 
 .comet {
-    @apply absolute w-1 h-1 bg-white rounded-full;
+    position: absolute;
+    width: 0.25rem;   /* 1 Tailwind unit = 0.25rem */
+    height: 0.25rem;
+    background-color: white;
+    border-radius: 9999px; /* fully rounded */
     box-shadow: 0 0 20px 2px white;
     animation: comet 20s linear infinite;
 }

@@ -1,5 +1,22 @@
 export const products = [
     {
+        name: 'FeatherPanel',
+        description: 'FeatherPanel is a modern and sleek alternative to Pterodactyl Panel.',
+        image: 'https://featherpanel.com/demo/dashboard.png?height=600&width=1200',
+        technologies: ['PhP', 'MySQL', 'Wings', 'TailWind'],
+        fullDescription: 'FeatherPanel is a modern and sleek alternative to Pterodactyl Panel.',
+        features: [ 'New Icons', 'New Design', 'Native Plugin System', 'Friendly Developer Experience', "Faster", "Smaller", "Open Source"],
+        images: [
+            'https://featherpanel.com/demo/dashboard.png?height=600&width=1200',
+            'https://featherpanel.com/demo/server_console.png?height=400&width=600',
+            'https://featherpanel.com/demo/file_manager.png?height=400&width=600',
+            'https://featherpanel.com/demo/admin_dashboard.png?height=400&width=600'
+        ],
+        link: 'https://featherpanel.com',
+        purchaseLink: 'https://featherpanel.com/pricing',
+        purchasePrice: '0.00'
+    },
+    {
         name: 'MythicalDash Remastered',
         description: 'Open-Source Client Area for Pterodactyl Panel designed for free hosting providers.',
         image: '/img/mythicaldash.png',
@@ -29,50 +46,6 @@ export const products = [
         images: ['/img/mythicaladmin.png'],
         purchaseLink: 'https://www.sourcexchange.net/products/mythicalui-pterodactyl-theme',
         purchasePrice: '6.00',
-    },
-    {
-        name: 'MythicalUI - Uptime Kuma 8 Theme Pack',
-        description: 'Take your monitoring software to the next level! 🚀',
-        image: '/img/mythicalstatus.png',
-        technologies: ['UptimeKuma', 'Tailwind', 'CSS'],
-        fullDescription:
-            "Transform your Uptime Kuma status page with MythicalUI, a premium collection of color themes designed for style, readability, and a professional touch. Whether you're monitoring personal projects or running enterprise-level systems, these themes bring life to your dashboard with a sleek, modern design.",
-        features: ['Color Changes', '8 Color Schemes', 'New Icons', 'Animations', 'Faster Load Times', 'New Design'],
-        demoLink: 'https://status.mythical.systems',
-        images: ['/img/mythicalstatus.png'],
-        purchaseLink: 'https://www.sourcexchange.net/products/mythicalui-uptime-kuma-8-theme-pack',
-        purchasePrice: '5.00',
-    },
-    {
-        name: 'MythicalLogin',
-        description: 'The solution for Minecraft and Discord integration.',
-        image: '/img/myhticallogin.png',
-        technologies: ['Java', 'Minecraft', 'PaperSpigot', 'Auth System'],
-        fullDescription:
-            "Full source code and compiled version of MythicalLogin, a powerful and easy-to-use authentication system for Minecraft servers. With MythicalLogin, you can easily integrate your Minecraft server with Discord, allowing players to link their Minecraft account to their Discord account for easy authentication and access to exclusive features. MythicalLogin is fully customizable and easy to set up, with detailed documentation and support available to help you get started. Whether you're running a small private server or a large public network, MythicalLogin is the perfect solution for secure, reliable authentication.",
-        features: [
-            'BungeeCord Only',
-            'Discord Integration',
-            'Easy Setup',
-            'Discord Bot',
-            'Customizable',
-            'Full Source Code',
-        ],
-        images: ['/img/myhticallogin.png'],
-        purchaseLink: 'https://www.sourcexchange.net/products/mythicallogin-full-srccompiled',
-        purchasePrice: '5.00',
-    },
-    {
-        name: 'PylexWatch',
-        description:
-            'A powerful and nice looking streaming website for your favorite movies and tv shows with no ads!.',
-        image: '/img/pylexwatch.jpg',
-        technologies: ['Java', 'React', 'VidSRC'],
-        fullDescription:
-            'A powerful and nice looking streaming website for your favorite movies and tv shows with no ads! And its fully open source with no strings attached!',
-        features: ['No Ads', 'Open Source', 'Free', 'Highly Customizable', 'Highly Secure'],
-        images: ['/img/pylexwatch.jpg'],
-        demoLink: 'https://pylex.watch',
     },
     {
         name: 'Gamster.org - Minecraft Network',
@@ -114,8 +87,8 @@ export const products = [
         technologies: ['PhP', 'MySQL', 'Pterodactyl Panel API', 'TailWind'],
         fullDescription:
             'Introducing the MythicalUI Theme, a revolutionary design crafted to transform your Pterodactyl Panel into a sleek, user-friendly, and feature-rich interface. Crafted with a clean, professional aesthetic, MythicalUI is highly intuitive, ensuring even first-time administrators can navigate the panel with ease.',
-        features: ['Color Changes', 'Search Bar', 'Auto Allocations', 'New Icons', 'New Design', 'Blueprint'],
-        purchaseLink: 'https://www.sourcexchange.net/products/mythicalui-v2-pterodactyl-admin',
+        features: ['Color Changes', 'Search Bar', 'Auto Allocations', 'New Icons', 'New Design'],
+        purchaseLink: 'https://builtbybit.com/resources/mythical-admin-v2.59417/',
         purchasePrice: '14.99',
     },
     {
@@ -145,7 +118,7 @@ export const products = [
             'Motd Builder',
             'Gradient Builder',
         ],
-        purchaseLink: 'https://www.sourcexchange.net/products/mcutils',
+        purchaseLink: 'https://builtbybit.com/resources/minecraft-utils-blueprint-legacy.59420/',
         purchasePrice: '9.99',
     },
 ];

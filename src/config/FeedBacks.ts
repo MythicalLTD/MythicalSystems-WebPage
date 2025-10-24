@@ -65,4 +65,40 @@ export const testimonials = [
         avatar: '/img/logos/mythical/mythical.png',
         quote: "I mean for the price. I'm pretty happy with it. It will help clients who are looking to do cool stuff and make it more convenient.",
     },
+    {
+        name: 'Galaxy OP',
+        position: 'CEO, Blazars Cloud',
+        avatar: '/img/logos/mythical/mythical.png',
+        quote: "FeatherPanel redefined our hosting experience — it’s lightning fast, feather-light on resources, and astonishingly intuitive. You can tell it was built by people who understand hosting inside and out!",
+    },
+    {
+        name: 'Blanco',
+        position: 'Cloud Architect',
+        avatar: '/img/logos/mythical/mythical.png',
+        quote: "I’ve worked with all the panels out there, and nothing comes close to FeatherPanel's modern design and seamless performance. Deployment is effortless, and our clients love the user experience.",
+    },
+    {
+        name: 'Adam',
+        position: 'Founder, ONHost',
+        avatar: '/img/logos/mythical/mythical.png',
+        quote: "How am I only just finding this panel? It works perfectly and looks amazing. Finally, a dev who actually keeps things updated!",
+    },
+    {
+        name: 'ChristiannX',
+        position: 'Founder, MultyPlay & ScrifySystems',
+        avatar: '/img/logos/mythical/mythical.png',
+        quote: "We switched to FeatherPanel after months of frustration with other solutions. The migration was simple, support was stellar, and our server operations have never been smoother.",
+    },
+    {
+        name: 'Alexutzerion5',
+        position: 'Founder, RexSystems & Lethal Romania',
+        avatar: '/img/logos/mythical/mythical.png',
+        quote: "FeatherPanel brought robust features, modern security, and true reliability to our network. It’s the upgrade I wish we’d made years ago!",
+    },
+    {
+        name: 'Th3Hunter',
+        position: 'Founder, KingsDomain',
+        avatar: '/img/logos/mythical/mythical.png',
+        quote: "I was impressed with how light and responsive FeatherPanel is. Managing even large fleets of servers is a breeze it’s seriously next-gen.",
+    },
 ];

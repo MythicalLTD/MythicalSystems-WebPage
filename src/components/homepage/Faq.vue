@@ -2,7 +2,7 @@
     <section class="py-20 relative overflow-hidden">
         <div class="container mx-auto px-4">
             <h2 class="text-5xl font-bold text-center mb-8 animate-fade-in">
-                <span class="bg-gradient-to-r from-purple-400 via-pink-400 to-violet-400 bg-clip-text text-transparent">
+                <span class="bg-linear-to-r from-purple-400 via-pink-400 to-violet-400 bg-clip-text text-transparent">
                     Frequently Asked Questions
                 </span>
             </h2>
@@ -50,7 +50,10 @@ import { FaqList } from '@/config/Faq';
 const faqs = ref(FaqList);
 
 const toggleFaq = (index: number) => {
-    faqs.value[index].isOpen = !faqs.value[index].isOpen;
+    const faq = faqs.value[index];
+    if (faq) {
+        faq.isOpen = !faq.isOpen;
+    }
 };
 </script>
 
