@@ -2,6 +2,7 @@
     <div class="min-h-screen bg-[#0a0a0f] text-white overflow-hidden">
         <AnimatedBackground />
         <div id="glowing-cursor"></div>
+        <AnnouncementBanner />
         <component :is="layout">
             <router-view></router-view>
         </component>
@@ -16,6 +17,7 @@ import { computed, onMounted, ref } from 'vue';
 import AnimatedBackground from '@/components/ui/AnimatedBackground.vue';
 import CustomContextMenu from '@/components/ui/CustomContextMenu.vue';
 import BackToTop from '@/components/ui/BackToTop.vue';
+import AnnouncementBanner from '@/components/ui/AnnouncementBanner.vue';
 
 import BaseLayout from '@/layouts/BaseLayout.vue';
 import DocsLayout from '@/layouts/DocsLayout.vue';

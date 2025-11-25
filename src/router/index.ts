@@ -17,11 +17,6 @@ const routes = [
         component: () => import('@/pages/legal/Privacy.vue'),
     },
     {
-        path: '/eula',
-        name: 'End User License Agreement',
-        component: () => import('@/pages/legal/Eula.vue'),
-    },
-    {
         path: '/branding',
         name: 'Branding Guidelines',
         component: () => import('@/pages/Branding.vue'),
